@@ -16,33 +16,33 @@ const users = [
   },
   {
     id: 2,
-    full_name: "Mészáros Roland",
+    full_name: "MR",
     username: "Roland123",
-    email: "meszaros.roland@szechenyi.hu", // ide küldi majd az OTP-t
+    email: "ex@ex.com", // ide küldi majd az OTP-t
     passwordHash: bcrypt.hashSync("1234", 10),
     roles: "user"
   },
   {
     id: 3,
     username: "Geri123",
-    full_name: "Nebl Gergő",
-    email: "nebl.gergo@szechenyi.hu", // ide küldi majd az OTP-t
+    full_name: "NG",
+    email: "ex@ex.com", // ide küldi majd az OTP-t
     passwordHash: bcrypt.hashSync("1234", 10),
     roles: "user"
   },
   {
     id: 4,
     username: "Yolo12",
-    full_name: "Kocsis Szabolcs Ernő",
-    email: "kocsis.szabolcs.erno@szechenyi.hu", // ide küldi majd az OTP-t
+    full_name: "KE",
+    email: "ex@ex.com", // ide küldi majd az OTP-t
     passwordHash: bcrypt.hashSync("1234", 10),
     roles: "user"
   },
   {
     id: 4,
     username: "Milla05",
-    full_name: "Várhegyi Ingrid Kamilla",
-    email: "kamillavarhegyi10@gmail.com", // ide küldi majd az OTP-t
+    full_name: "VIK",
+    email: "ex@ex.com", // ide küldi majd az OTP-t
     passwordHash: bcrypt.hashSync("1234", 10),
     roles: "user"
   },
@@ -144,8 +144,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // STARTTLS
   auth: {
-    user: "ddorian092@gmail.com",
-    pass: "xddi gvkg yilr pbrw"
+    user: "<email>@gmail.com",
+    pass: "<Credentials>"
   }
 });
 
