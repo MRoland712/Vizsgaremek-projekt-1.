@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .otp {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .warning {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777777;
+            padding-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://via.placeholder.com/150x50?text=CarComps" alt="CarComps Logo">
+        </div>
+        <div class="content">
+            <p>Tisztelt ${user.full_name || user.username}!</p>
+            <p>Az Ön egyszer használatos belépési kódja:</p>
+            <div class="otp">${otp}</div>
+            <p>Ez a kód <strong>1 óráig érvényes</strong>. Kérjük, kizárólag a hivatalos <a href="https://carcomps.hu">CarComps.hu</a> felületen használja.</p>
+            <p class="warning">Kérjük, ne ossza meg senkivel ezt a kódot!</p>
+            <p>Ha nem Ön kérte ezt a kódot, kérjük, haladéktalanul jelezze ügyfélszolgálatunknak az alábbi elérhetőségeken:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:ugyfelszolgalat@carcomps.hu">ugyfelszolgalat@carcomps.hu</a><br>
+                <strong>Weboldal:</strong> <a href="https://carcomps.hu/ugyfelszolgalat" class="button">Ügyfélszolgálat</a>
+            </p>
+            <p> Amennyiben nem ön volt, kattintson rá az alábbi gombra: <a href="https://carcomps.hu/ugyfelszolgalat" class="button">Nem én voltam</a>
+        </div>
+        <div class="footer">
+            <p>Tisztelettel:<br>CarComps Ügyfélszolgálat</p>
+        </div>
+    </div>
+</body>
+</html>
